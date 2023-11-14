@@ -2,11 +2,13 @@ sudo: required
 services:
   - docker
 
-
+branches:
+  only:
+    - main
+    
 before_install:
   - docker build -t elijah/docker-react -f Dockerfile.dev .
 
 
 script:
   - docker run -e CI=true elijah/docker-react npm run test
-  
