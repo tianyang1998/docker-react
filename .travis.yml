@@ -1,11 +1,13 @@
+branches:
+  only:
+    - main
+
 sudo: required
 services:
   - docker
 
-branches:
-  only:
-    - main
-    
+
+
 before_install:
   - docker build -t elijah/docker-react -f Dockerfile.dev .
 
