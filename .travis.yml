@@ -1,8 +1,11 @@
+
+
+sudo: required
+
 branches:
   only:
     - main
 
-sudo: required
 services:
   - docker
 
