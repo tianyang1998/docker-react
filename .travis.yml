@@ -2,9 +2,9 @@
 
 sudo: required
 
-branches:
-  only:
-    - main
+# branches:
+#   only:
+#     - main
 
 services:
   - docker
